@@ -15,8 +15,9 @@ module.exports = {
         },
         sourceType: 'module',
     },
-    plugins: ['react', 'react-hooks'],
+    plugins: ['prettier', 'react', 'react-hooks'],
     extends: [
+        'prettier',
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
@@ -27,5 +28,6 @@ module.exports = {
         },
     },
     rules: {
+        'prettier/prettier': ['error']
     },
 };

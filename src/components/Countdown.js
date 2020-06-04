@@ -5,7 +5,7 @@ import moment from 'moment'
 const dateTarget = moment().add(3, 'days');
 
 
-const CountdownMessage = () => {
+const Countdown = () => {
     const [dateNow, setDateNow] = useState(moment());
     useEffect(() => {
         const timerId = setTimeout(() => {
@@ -28,4 +28,4 @@ const CountdownMessage = () => {
     );
 }
 
-export default CountdownMessage
+export default Countdown;
