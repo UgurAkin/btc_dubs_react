@@ -2,7 +2,7 @@
     height: 100%;
 }
 
-#SideNav {
+#SideBar {
     min-width: 12rem;
 }
 
@@ -20,3 +20,10 @@
     height: 2rem;
 
 }
+
+#ProfileHeader img {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
