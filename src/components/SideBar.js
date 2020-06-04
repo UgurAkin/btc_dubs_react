@@ -8,10 +8,10 @@ const SideBar = () => {
                     src="https://via.placeholder.com/250" alt="" />
                 <div className="row">
                     <div className="col text-center align-middle">
-                        <a className="btn-sm btn-block btn-primary text-light" href="#">Log In</a>
+                        <a className="btn-sm btn-block btn-primary text-light" href="body">Log In</a>
                     </div>
                     <div className="col text-center align-middle">
-                        <a className="btn-sm btn-block btn-primary text-light">Sign Up</a>
+                        <a className="btn-sm btn-block btn-primary text-light" href="body">Sign Up</a>
                     </div>
                 </div>
             </div>

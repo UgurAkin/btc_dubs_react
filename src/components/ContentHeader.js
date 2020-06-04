@@ -1,4 +1,5 @@
 import React from 'react'
+import Countdown from './Countdown'
 
 const ContentHeader = () => {
     return (
@@ -8,10 +9,7 @@ const ContentHeader = () => {
                     <div className="container">
                         <h1 className="display-4 text-center">BTC Doubles Night</h1>
                         <hr className="my-4" />
-                        <p className="lead text-center">X time until the registration for next doubles night opens.</p>
-                        <p className="lead text-center">
-                            <a className="btn btn-primary btn-lg disabled" href="body" role="button">Register Here</a>
-                        </p>
+                        <Countdown />
                     </div>
                 </div>
             </div>
