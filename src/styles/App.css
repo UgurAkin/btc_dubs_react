@@ -2,12 +2,21 @@
     height: 100%;
 }
 
-#Header .jumbotron {
+#SideNav {
+    min-width: 12rem;
+}
+
+#ContentHeader .jumbotron {
     /* background-color: bisque; */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-#SideNav {
-    background-color: darkgray;
+.section-header {
+    height: 2.5rem;
+}
+
+.user-card {
+    height: 2rem;
+
 }
