@@ -1,0 +1,13 @@
+#App {
+    height: 100%;
+}
+
+#Header .jumbotron {
+    /* background-color: bisque; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#SideNav {
+    background-color: darkgray;
+}
