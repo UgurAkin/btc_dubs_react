@@ -1,29 +1,28 @@
 #App {
-    height: 100%;
+  height: 100%;
 }
 
 #SideBar {
-    min-width: 12rem;
+  min-width: 12rem;
 }
 
 #ContentHeader .jumbotron {
-    /* background-color: bisque; */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  /* background-color: bisque; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section-header {
-    height: 2.5rem;
+  height: 2.5rem;
 }
 
 .user-card {
-    height: 2rem;
-
+  height: 2rem;
 }
 
-#ProfileHeader img {
-    object-fit: none; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+#SidebarHeader img {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  margin-bottom: 1rem;
+}

@@ -17,6 +17,7 @@ const Countdown = () => {
     })
 
     const countdown = moment.duration(dateTarget.diff(dateNow));
+    //TODO: Fix time formatting (problem for single digits). 
     const countdownMessage = `${countdown.days()} Days, ${countdown.hours()}:${countdown.minutes()}:${countdown.seconds()}`;
     return (
         <>
