@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'styles/App.css';
-import SideBar from './SideBar';
+import Sidebar from './Sidebar';
 import ContentHeader from './ContentHeader';
 import ContentBody from './ContentBody';
 
@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div id="App" className="row no-gutters">
       <UserContext.Provider value={user}>
-        <SideBar userAction={user ? logout : login} />
+        <Sidebar userAction={user ? logout : login} />
       </UserContext.Provider>
 
       <div id="SiteContent" className="col">

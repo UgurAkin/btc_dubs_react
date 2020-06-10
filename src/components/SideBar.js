@@ -1,29 +1,10 @@
-import React, { useContext } from 'react';
-import { UserContext } from 'components/App';
+import React from 'react';
+import SidebarHeader from './SidebarHeader';
 
-const SideBar = ({ userAction }) => {
-  const userCtx = useContext(UserContext);
-  const profilePanelBtnText = userCtx ? 'Logout' : 'Login';
-  const avatarUrl = userCtx
-    ? userCtx.avatarUrl
-    : 'https://via.placeholder.com/250';
-
+const Sidebar = ({ userAction }) => {
   return (
-    <div id="SideBar" className="bg-dark col-2 pt-5">
-      <div id="SidebarHeader" className="container py-2 bg-secondary">
-        <img className="rounded-circle" src={avatarUrl} alt="" />
-        <div className="row">
-          <div className="col-6 offset-3 text-center align-middle">
-            <button
-              className="btn btn-sm btn-block btn-primary text-light"
-              type="button"
-              onClick={userAction}
-            >
-              {profilePanelBtnText}
-            </button>
-          </div>
-        </div>
-      </div>
+    <div id="Sidebar" className="bg-dark col-2 pt-5">
+      <SidebarHeader userAction={userAction} />
       <div id="SideNav">
         <ul className="list-group list-group-flush">
           <li className="list-group-item bg-transparent text-light d-flex align-items-center justify-content-between">
@@ -48,4 +29,4 @@ const SideBar = ({ userAction }) => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
