@@ -1,28 +1,4 @@
-#App {
-  height: 100%;
-}
-
-#SideBar {
-  min-width: 12rem;
-}
-
-#ContentHeader .jumbotron {
-  /* background-color: bisque; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.section-header {
-  height: 2.5rem;
-}
-
-.user-card {
-  height: 2rem;
-}
-
-#ProfileHeader img {
+#ProfilePanel img {
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-  width: 100%;
-  margin-bottom: 1rem;
 }
