@@ -1,3 +1,20 @@
+/* @font-face {
+  font-family: "Ubuntu";
+  src: url("/public/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
+} */
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sidebar {
+  width: 330px;
+}
+
+.sidebar nav a {
+  font-size: 1.25rem;
+}
+
 #ProfilePanel img {
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */

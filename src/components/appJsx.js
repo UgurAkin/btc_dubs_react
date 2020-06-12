@@ -2,59 +2,65 @@ import React from "react";
 import "styles/App.css";
 
 const appJsx2 = (
-  <div id="App" className="container-fluid">
-    <div className="row flex-xl-nowrap">
-      <div
-        id="Sidebar"
-        className="d-flex flex-column col-md-4 col-xl-2 sticky-top border-right vh-100"
-      >
-        <div className="row border-bottom">
-          <p className="h2 text-center">Burnaby Tennis Club</p>
-        </div>
-        <div className="row">
-          <div id="ProfilePanel" className="p-5">
-            <div>
-              <img
-                className="rounded-circle img-thumbnail"
-                src="https://via.placeholder.com/250"
-                alt=""
-              />
-              <p>fName LName</p>
-            </div>
+  <div id="App">
+    <div
+      id="Sidebar"
+      className="row d-flex flex-column sidebar sticky-top border-right vh-100"
+    >
+      <div className="border-bottom py-3">
+        <p className="h2 text-center">Burnaby Tennis Club</p>
+      </div>
+      <div>
+        <div id="ProfilePanel" className="p-5">
+          <div className="container-fluid text-center">
+            <img
+              className="rounded-circle img-thumbnail w-50 m-auto"
+              src="https://via.placeholder.com/250"
+              alt=""
+            />
+            <p className="text-center">
+              <b>Ugur Akin</b>
+            </p>
           </div>
-        </div>
-
-        <div className="row border-top bg-primary flex-grow-1">
-          <nav className="d-flex align-items-stretch list-group list-group-flush border-bottom w-100">
-            <a
-              className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
-              href="#HistoryContent"
-            >
-              <span>My History</span>
-            </a>
-            <a
-              className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
-              href="#StatsContent"
-            >
-              My Stats
-            </a>
-            <a
-              className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
-              href="#ProfileContent"
-            >
-              Profile
-            </a>
-            <a
-              className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
-              href="#ContentHeader"
-            >
-              Logout
-            </a>
-          </nav>
         </div>
       </div>
 
-      <main className="col-md-9 col-xl-8" role="main"></main>
+      <nav className="border-top flex-grow-1 d-flex align-items-stretch list-group list-group-flush border-bottom w-100">
+        <a
+          className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
+          href="#HistoryContent"
+        >
+          <i className="far fa-clipboard mx-3"></i>
+          <span>My Results</span>
+        </a>
+        <a
+          className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
+          href="#StatsContent"
+        >
+          <i className="far fa-chart-bar mx-3"></i>
+          <span>My Stats</span>
+        </a>
+        <a
+          className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
+          href="#ProfileContent"
+        >
+          <i className="far fa-user mx-3"></i>
+          <span>Profile</span>
+        </a>
+        <a
+          className="d-flex align-items-center flex-grow-1 list-group-item list-group-item-action"
+          href="#ContentHeader"
+        >
+          <i className="fas fa-power-off mx-3"></i>
+          <span>Logout</span>
+        </a>
+      </nav>
+    </div>
+
+    <div className="container-fluid">
+      <div className="row flex-xl-nowrap">
+        <main className="col-md-9 col-xl-8" role="main"></main>
+      </div>
     </div>
   </div>
 );
