@@ -1,28 +1,45 @@
-#App {
+/* @font-face {
+  font-family: "Ubuntu";
+  src: url("/public/fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
+} */
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.theme {
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+
+  /* Full height */
   height: 100%;
-}
-
-#SideBar {
-  min-width: 12rem;
-}
-
-#ContentHeader .jumbotron {
-  /* background-color: bisque; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.section-header {
-  height: 2.5rem;
-}
-
-.user-card {
-  height: 2rem;
-}
-
-#SidebarHeader img {
-  object-fit: none; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
   width: 100%;
-  margin-bottom: 1rem;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: none;
+}
+
+.sidebar {
+  width: 330px;
+}
+
+.sidebar nav a {
+  font-size: 1.25rem;
+}
+
+.profile-thumbnail {
+  /* object-fit: none; Do not scale the image */
+  object-position: center; /* Center the image within the element */
+}
+
+main {
+  overflow-y: scroll;
+  height: 100vh;
 }

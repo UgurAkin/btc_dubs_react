@@ -1,5 +1,5 @@
-import React from "react";
-import "styles/App.css";
+import React from 'react';
+import 'styles/App.css';
 
 const sidebarJsx = (
   <>
@@ -236,4 +236,5 @@ const appJsx = (
   </div>
 );
 
+export { sidebarJsx };
 export default appJsx;
