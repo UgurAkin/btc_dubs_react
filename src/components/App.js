@@ -14,12 +14,18 @@ const sampleUser = {
   themeUrl: process.env.PUBLIC_URL + '/sampleThemeFed.jpg'
 };
 
-const UserContext = React.createContext(sampleUser);
+const UserContext = React.createContext();
 
 const App = () => {
-  const [user, setUser] = useState(sampleUser);
-  const login = () => setUser(sampleUser);
-  const logout = () => setUser();
+  const [user, setUser] = useState();
+  const login = () => {
+    console.log('login');
+    setUser(sampleUser);
+  };
+  const logout = () => {
+    console.log('logout');
+    setUser();
+  };
   return (
     <div id="App" className="row no-gutters">
       <UserContext.Provider value={user}>
