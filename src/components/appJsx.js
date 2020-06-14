@@ -67,7 +67,7 @@ const lastWeekJsx = (
       <thead>
         <tr>
           <th className="border-top-0" scope="col">
-            #
+            Group A
           </th>
           <th className="border-top-0" scope="col">
             First
