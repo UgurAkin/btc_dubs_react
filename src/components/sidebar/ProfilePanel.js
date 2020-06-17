@@ -9,8 +9,8 @@ const ProfilePanel = () => {
   const themeUrl = userCtx ? userCtx.themeUrl : '';
   const name = userCtx ? userCtx.name : '';
   return (
-    <div>
-      <div id="ProfilePanel">
+    <>
+      <div id="ProfilePanel" class="profile-panel">
         <div
           className="theme"
           style={{
@@ -28,7 +28,7 @@ const ProfilePanel = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

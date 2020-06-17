@@ -7,23 +7,23 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+.profile-panel {
+  display: grid;
+  grid-template-rows: 100%;
+}
+
+.profile-panel > div {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
 .theme {
-  /* Add the blur effect */
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
   opacity: 0.6;
-  position: absolute;
   z-index: -1;
-
-  /* Full height */
-  height: 100%;
-  width: 100%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: none;
 }
 
 .sidebar {
@@ -41,5 +41,6 @@
 
 main {
   overflow-y: scroll;
+  scroll-behavior: smooth;
   height: 100vh;
 }
