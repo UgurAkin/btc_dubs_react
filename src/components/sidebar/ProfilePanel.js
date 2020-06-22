@@ -19,7 +19,7 @@ const ProfilePanel = () => {
         ></div>
         <div className="text-center p-5">
           <img
-            className="rounded-circle img-thumbnail w-50 m-auto profile-thumbnail"
+            className="rounded-circle w-50 m-auto profile-thumbnail border"
             src={avatarUrl}
             alt=""
           />
