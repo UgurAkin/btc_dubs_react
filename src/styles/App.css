@@ -35,8 +35,8 @@
 }
 
 .profile-thumbnail {
-  /* object-fit: none; Do not scale the image */
   object-position: center; /* Center the image within the element */
+  border-width: thick !important;
 }
 
 main {
