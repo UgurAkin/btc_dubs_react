@@ -127,11 +127,9 @@ const rulesAndFormatJsx = (
 const App = () => {
   const [user, setUser] = useState();
   const login = () => {
-    console.log('login');
     setUser(sampleUser);
   };
   const logout = () => {
-    console.log('logout');
     setUser();
   };
   return (

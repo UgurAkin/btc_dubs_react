@@ -1,16 +1,9 @@
-import React, { useContext } from 'react';
-import { UserContext } from 'components/App';
+import React from 'react';
 
-const ProfilePanel = () => {
-  const userCtx = useContext(UserContext);
-  const avatarUrl = userCtx
-    ? userCtx.avatarUrl
-    : 'https://via.placeholder.com/250';
-  const themeUrl = userCtx ? userCtx.themeUrl : '';
-  const name = userCtx ? userCtx.name : '';
+const ProfilePanel = ({ name, themeUrl, avatarUrl }) => {
   return (
     <>
-      <div id="ProfilePanel" class="profile-panel">
+      <div id="ProfilePanel" className="profile-panel">
         <div
           className="theme"
           style={{
