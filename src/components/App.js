@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'styles/App.css';
 import Sidebar from './sidebar/Sidebar';
 import RegistrationJumbotron from './sidebar/RegistrationJumbotron';
+import WeekResult from './results/WeekResult';
 
 const sampleUser = {
   name: 'Ugur Akin',
@@ -18,68 +19,7 @@ const UserContext = React.createContext();
 
 const lastWeekJsx = (
   <div id="LastWeeksResults" className="collapse show">
-    <table className="table table-striped">
-      <thead>
-        <tr>
-          <th className="border-top-0" scope="col">
-            Group A
-          </th>
-          <th className="border-top-0" scope="col">
-            First
-          </th>
-          <th className="border-top-0" scope="col">
-            Last
-          </th>
-          <th className="border-top-0" scope="col">
-            Handle
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+    <WeekResult />
     <div className="text-right">
       <a href="#PreviousWeeks" className="text-muted">
         See Previous Weeks
