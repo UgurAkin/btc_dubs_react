@@ -3,6 +3,7 @@ import 'styles/App.css';
 import Sidebar from './sidebar/Sidebar';
 import RegistrationJumbotron from './sidebar/RegistrationJumbotron';
 import WeekResult from './results/WeekResult';
+import { getUsers } from '../data/userApi';
 
 const sampleUser = {
   name: 'Ugur Akin',
@@ -14,6 +15,11 @@ const sampleUser = {
   avatarUrl: process.env.PUBLIC_URL + '/sampleAvatar.jpg',
   themeUrl: process.env.PUBLIC_URL + '/sampleThemeFed.jpg'
 };
+
+// const sampleUserFromApi = getUsers().then(users => {
+//   console.log(users[0]);
+//   return users[0];
+// });
 
 const UserContext = React.createContext();
 

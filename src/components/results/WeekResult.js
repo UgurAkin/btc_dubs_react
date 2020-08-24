@@ -27,7 +27,7 @@ const WeekResult = () => {
       </thead>
       <tbody>
         {Array.from({ length: 6 }).map((v, i) => (
-          <>
+          <React.Fragment key={i}>
             <tr>
               <th rowSpan={5} scope="row" className="border-right">
                 {i + 1}
@@ -61,7 +61,7 @@ const WeekResult = () => {
               <td>5</td>
               <td>12</td>
             </tr>
-          </>
+          </React.Fragment>
         ))}
       </tbody>
     </table>

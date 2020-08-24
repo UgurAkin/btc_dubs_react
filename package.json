@@ -9,10 +9,11 @@
     "moment": "^2.26.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "run-p start:dev start:api",
+    "start:dev": "react-scripts start",
     "start:api": "nodemon --exec \"npm run build:api && npm run serve:api\" --watch tools/mockData.js --watch tools/createMockDb.js",
     "serve:api": "node tools/apiServer.js",
     "build:api": "node tools/createMockDb.js ",

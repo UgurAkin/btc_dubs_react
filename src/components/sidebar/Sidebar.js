@@ -19,7 +19,6 @@ const Sidebar = ({ login, logout }) => {
     <GuestSidebar login={login} />
   );
 
-  console.log('sidebar');
   return (
     <div
       id="Sidebar"
